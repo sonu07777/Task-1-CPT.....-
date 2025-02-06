@@ -6,6 +6,12 @@
     <title>StartupLanding/Contact</title>
     <link rel="stylesheet" href="./output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -43,8 +49,8 @@
             </li>
 
             <li
-              class="relative group font-[DM sans] font-normal tracking-[1px] text-[#0F2137] hover:text-[#0A8080] flex flex-row justify-center items-center">
-              <a href="#adversity">Adversity</a>
+              class=" relative group font-[DM sans] font-normal tracking-[1px] text-[#0F2137] hover:text-[#0A8080] flex flex-row justify-center items-center">
+              <a href="index.html#adversity">Adversity</a>
               <div>
                 <span class="relative text-center font-black top-[3px]">
                   <ion-icon name="caret-down-outline"></ion-icon>
@@ -68,7 +74,7 @@
 
             <li
               class="relative group font-[DM sans] font-normal tracking-[1px] text-[#0F2137] hover:text-[#0A8080]">
-              <a href="#about">About</a>
+              <a href="index.html#about">About</a>
               <span
                 class="absolute bottom-0 left-0 w-0 h-[2px] bg-[#0A8080] transition-all duration-300 group-hover:w-full"></span>
             </li>
@@ -105,7 +111,6 @@
       </section>
     </nav>
     
-    <!-- -------------------------------------- -->
      <!-- Contact,address details -->
      <section class="py-26">
       <div class="max-w-7xl mx-auto px-7 sm:px-15">
@@ -501,7 +506,94 @@
         </div>
       </div>
     </section>
-     <!-- ------------------------------------------ -->
+    <!-- subscribe section -->
+    <section
+    class="container mx-auto h-[400px] sm:h-[325px] 2xl:h-[330px] mt-10">
+    <img
+      class="hidden xl:block bg-[#F8F0EA]"
+      src="./All PNG/bgc.png"
+      alt="" />
+    <div
+      class="box-border p-1 lg:relative xl:top-[-240px] lg:bg-none py-5 px-[-60px] h-auto ">
+      <!-- <div
+        class="xl:w-[76%] 2xl:w-[72%] mx-auto flex flex-col gap-12 xl:flex-row 2xl:justify-start xl:justify-center items-center py-[30px] bg-white xl:gap-5">
+        <div class="mix-blend-normal xl:pl-5">
+          <h1
+            class="font-bold font-[B612] text-[1rem] text-center sm:text-start sm:text-[1.563rem] leading-[55px] tracking-[1px]">
+            Like our service? Subscribe us
+          </h1>
+          <p
+            class="container font-[DM sans] font-normal text-[16px] leading-[16px] tracking-[1px] text-[#343D48] text-center sm:text-start w-[390px]">
+            We have more than thousand of creative entrepreneurs and stat
+            joining our business
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-start">
+          <div class="flex gap-[0.938rem]">
+            <input
+              class="bg-[#EFF3F7] outline-none h-[3.75rem] w-[350px] rounded-[5px] pl-2"
+              placeholder="Enter email address "
+              type="text" />
+            <button
+              class="hidden sm:block bg-[#DB4A87] w-[150px] sm:w-[110px] 2xl:w-[150px] h-[60px] rounded-[5px]">
+              Subscribe
+            </button>
+          </div>
+          <div
+            class="flex justify-center items-center gap-[0.938rem] flex-col">
+            <div class="flex justify-center items-center gap-[0.938rem]">
+              <input type="checkbox" name="" id="" />
+              <p
+                class="font-[DM sans] font-normal leading-[30px] tracking-[1px] text-[14px]">
+                Don’t provide any promotional message.
+              </p>
+            </div>
+            <div class="sm:hidden">
+              <button
+                class="bg-[#DB4A87] w-[150px] sm:w-[110px] 2xl:w-[150px] h-[60px] rounded-[5px]">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div
+        class="w-full max-w-[90%] mx-auto flex flex-col gap-4 xl:flex-row xl:justify-between items-center py-8 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="text-center xl:text-left xl:pl-5 ">
+          <h1
+            class="font-bold font-[B612] text-lg sm:text-2xl leading-[1.5] tracking-wide">
+            Like our service? Subscribe to us
+          </h1>
+          <p
+            class="font-[DM Sans] font-normal text-sm sm:text-base leading-[1.5] text-gray-700 max-w-sm mx-auto xl:mx-0">
+            We have more than a thousand creative entrepreneurs joining our
+            business.
+          </p>
+        </div>
+        <div
+          class="w-full max-w-md flex flex-col items-center xl:items-start ">
+          <div class="w-full flex flex-col sm:flex-row gap-3">
+            <input
+              class="bg-gray-200 outline-none h-12 w-full sm:w-[350px] rounded-md px-3"
+              placeholder="Enter email address "
+              type="email" />
+            <button
+              class="bg-[#DB4A87] w-full sm:w-32 h-12 rounded-md text-white font-medium">
+              Subscribe
+            </button>
+          </div>
+          <div class="flex items-center gap-2 mt-3">
+            <input type="checkbox" id="no-promos" class="cursor-pointer" />
+            <label
+              for="no-promos"
+              class="text-sm text-gray-700 cursor-pointer">
+              Don’t provide any promotional messages.
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
     <!-- footer -->
     <footer
       class="container mx-auto size-[100%] box-border flex flex-col lg:flex-row justify-center items-center  lg:items-start  sm:text-center gap-5 lg:gap-18 p-10">
