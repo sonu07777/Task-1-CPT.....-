@@ -6,6 +6,12 @@
     <title>StartupLanding/Contact</title>
     <link rel="stylesheet" href="./output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000"
@@ -13,72 +19,95 @@
   </head>
 
   <body>
-    <nav
-      id="nav"
-      class="relative container h-[2.5rem] bg-[#fffff] top-[25px] flex items-center justify-around gap-10 mx-auto md:px-10">
-      <div class="flex md:flex-row items-center justify-center md:gap-10">
-        <div>
-          <img
-            class="w-[12.188rem]"
-            src="../../All PNG/image.png"
-            alt=""
-            srcset="" />
-        </div>
+    <nav class="sticky w-[100vw] top-1 z-[40] box-border container mx-auto">
+      <section
+         id="nav"
+        class="container h-[2.5rem] flex items-center justify-around gap-10 mx-auto md:px-10 py-[27px] w-auto rounded-full">
+        <div class="flex md:flex-row items-center justify-center md:gap-10">
+          <div>
+            <img
+              class="w-[12.188rem]"
+              src="./All PNG/image.png"
+              alt=""
+              srcset="" />
+          </div>
 
-        <ul
-          class="nav-link bg-white flex flex-col absolute duration-500 top-[-250px] left-0 gap-2.5 items-center justify-around h-[14rem] w-full border-spacing-y-[10px] md:h-auto md:w-[502px] md:static md:flex-row md:items-center md:justify-aroud md:gap-8">
-          <li
-            class="border-b-[1px] border-b-[#0A8080] md:border-b-white font-sans font-normal tracking-[1px] text-[#0F2137] ]">
-            <a href="#home">Home </a>
-          </li>
-
-          <li
-            class="border-b-[1px] border-b-[#0A8080] md:border-b-white font-sans font-normal tracking-[1px] text-[#0F2137] ]">
-            <a href="#adversity"
-              >Adversity
+          
+          <ul
+            class="nav-link bg-white md:bg-inherit md:backdrop-blur-[30px] flex flex-col absolute duration-500 top-[-250px] left-0 gap-2.5 items-center justify-around h-[14rem] w-full border-spacing-y-[10px] md:h-auto md:w-[502px] md:static md:flex-row md:items-center md:gap-8">
+            <li
+              class="relative group font-[DM sans] font-normal tracking-[1px] text-[#0F2137] hover:text-[#0A8080]">
+              <a href="./index.html">Home</a>
               <span
-                class="relative text-center text-[#0F2137] font-black right-[6px] top-[3px]"
-                ><ion-icon name="caret-down-outline"></ion-icon
-              ></span>
-            </a>
-          </li>
-          <li
-            class="border-b-[1px] border-b-[#0A8080] md:border-b-white font-sans font-normal tracking-[1px] text-[#0F2137] ]">
-            <a href="#"
-              >support<span
-                class="relative text-[#0F2137] font-black text-center right-[2px] top-[3px]"
-                ><ion-icon name="caret-down-outline"></ion-icon></span
-            ></a>
-          </li>
-          <li
-            class="border-b-[1px] border-b-[#0A8080] md:border-b-white font-sans font-normal tracking-[1px] text-[#0F2137] ]">
-            <a href="#About">About</a>
-          </li>
-        </ul>
-      </div>
-      <div
-        class="flex items-center justify-around gap-5 sm:gap-10 font-normal tracking-[1px] text-[#0F2137]">
-        <div class="border border-[#0A8080] py-1.5 rounded px-3 bg-[#0A8080]">
-          <a class="font-bold text-white text-center bg-[#0A8080]" href=""
-            >Login</a
-          >
-        </div>
-        <div class="hidden lg:block text-[#0A8080] font-sans w-[91px] h-[33px]">
-          <a class="" href="#">Get Started</a>
-          <img
-            class="w-[82px] absolute h-[6px]"
-            src="../../All PNG/image copy.png"
-            alt=""
-            srcset="" />
-        </div>
-        <ion-icon
-          class="md:hidden cursor-pointer"
-          onclick="onToggleMenu(this)"
-          name="menu-outline"></ion-icon>
-      </div>
-    </nav>
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-[#0A8080] transition-all duration-300 group-hover:w-full"></span>
+            </li>
 
-    <section class="mt-25 py-26">
+            <li
+              class="relative group font-[DM sans] font-normal tracking-[1px] text-[#0F2137] hover:text-[#0A8080] flex flex-row justify-center items-center">
+              <a href="#adversity">Adversity</a>
+              <div>
+                <span class="relative text-center font-black top-[3px]">
+                  <ion-icon name="caret-down-outline"></ion-icon>
+                </span>
+              </div>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-[#0A8080] transition-all duration-300 group-hover:w-full"></span>
+            </li>
+
+            <li
+              class="relative group font-[DM sans] font-normal tracking-[1px] text-[#0F2137] hover:text-[#0A8080] flex justify-center items-center">
+              <a href="#support">Support</a>
+              <div>
+                <span class="relative text-center font-black top-[3px]">
+                  <ion-icon name="caret-down-outline"></ion-icon>
+                </span>
+              </div>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-[#0A8080] transition-all duration-300 group-hover:w-full"></span>
+            </li>
+
+            <li
+              class="relative group font-[DM sans] font-normal tracking-[1px] text-[#0F2137] hover:text-[#0A8080]">
+              <a href="#about">About</a>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-[#0A8080] transition-all duration-300 group-hover:w-full"></span>
+            </li>
+
+            <li
+              class="relative group font-[DM sans] font-normal tracking-[1px] text-[#0F2137] hover:text-[#0A8080]">
+              <a href="./contactUspage.html">Contact</a>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-[#0A8080] transition-all duration-300 group-hover:w-full"></span>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="flex items-center justify-around gap-5 sm:gap-10 font-normal tracking-[1px] text-[#0F2137]">
+          <div class="border border-[#0A8080] py-1.5 rounded px-3 bg-[#0A8080]">
+            <a class="font-bold text-white text-center bg-[#0A8080]" href=""
+              >Login</a
+            >
+          </div>
+          <div
+            class="hidden lg:block text-[#0A8080] font-sans w-[91px] h-[33px]">
+            <a class="" href="#centered">Get Started</a>
+            <img
+              class="w-[82px] absolute h-[6px]"
+              src="./All PNG/image copy.png"
+              alt=""
+              srcset="" />
+          </div>
+          <ion-icon
+            class="md:hidden cursor-pointer"
+            onclick="onToggleMenu(this)"
+            name="menu-outline"></ion-icon>
+        </div>
+      </section>
+    </nav>
+    
+    <!-- -------------------------------------- -->
+     <!-- Contact,address details -->
+     <section class="py-26">
       <div class="max-w-7xl mx-auto px-7 sm:px-15">
         <div class="flex items-center mb-28 space-x-9">
           <span class="h-[3px] w-[100px] bg-black"></span>
@@ -87,10 +116,11 @@
             Contact us
           </h2>
         </div>
-        <div class="flex flex-col md:flex-row justify-between gap-16 md:gap-8">
+        <div
+          class="flex flex-col md:flex-row justify-between gap-16 md:gap-8">
           <div class="flex space-x-8">
             <img
-              src="../All PNG/image copy 29.png"
+              src="./All PNG/image copy 29.png"
               alt=""
               class="w-[70px] h-[70px]" />
             <div>
@@ -110,7 +140,7 @@
           </div>
           <div class="flex space-x-8">
             <img
-              src="../All PNG/image copy 30.png"
+              src="./All PNG/image copy 30.png"
               alt=""
               class="w-[70px] h-[70px]" />
             <div>
@@ -126,7 +156,7 @@
           </div>
           <div class="flex space-x-8">
             <img
-              src="../All PNG/image copy 31.png"
+              src="./All PNG/image copy 31.png"
               alt=""
               class="w-[70px] h-[70px]" />
             <div>
@@ -143,7 +173,8 @@
         </div>
       </div>
     </section>
-    <div class="conatainer size-full border bg-[#FFF5ED]">
+    <!-- contact form -->
+    <div class="conatainer size-full bg-[#FFF5ED]">
       <section
         id="contact-form"
         class="max-w-5xl py-26 px-4 mx-auto bg-[#FFF5ED] w-[100%]">
@@ -158,7 +189,9 @@
           </p>
         </div>
 
-        <form class="bg-[#F9FAFC] px-4 sm:px-24 py-20 rounded-[30px]">
+        <form
+          id="contact-form"
+          class="bg-[#F9FAFC] px-4 sm:px-24 py-20 rounded-[30px]">
           <div class="grid grid-cols-2 gap-x-6 gap-y-14">
             <div class="name-div relative mb-4">
               <input
@@ -307,18 +340,17 @@
         </form>
       </section>
     </div>
-
+    <!-- map  -->
     <section id="map">
       <div class="max-w-[1190px] mx-auto px-4 py-10">
         <img
-          src="../All PNG/image copy 32.png"
+          src="./All PNG/image copy 32.png"
           alt="map"
           class="w-full h-full" />
       </div>
     </section>
-
-    <section
-      class="container mx-auto flex items-center justify-center py-auto">
+    <!-- get email for more information -->
+    <section class="container mx-auto flex items-center justify-center">
       <div
         class="flex flex-col items-center justify-center text-center max-w-7xl mx-auto px-5 sm:px-15">
         <h2
@@ -335,7 +367,7 @@
           <div
             class="relative w-full h-[104px] text-2xl border border-[#DB4A87]">
             <img
-              src="../All PNG/image copy 33.png"
+              src="./All PNG/image copy 33.png"
               alt="envelop"
               class="w-[24px] h-[24px] absolute left-12 top-1/2 transform -translate-y-1/2" />
             <input
@@ -360,7 +392,7 @@
         </div>
       </div>
     </section>
-
+    <!-- FAQ section -->
     <section id="support" class="py-30 px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl/[50px] font-medium text-center mb-4">
@@ -372,163 +404,117 @@
 
         <div class="space-y-6 px-4">
           <div>
-            <details class="group border-b border-(--border-btm-faq) pb-4 mb-4">
+            <details
+              class="group border-b border-(--border-btm-faq) pb-4 mb-4">
               <summary
                 class="flex items-center justify-between cursor-pointer text-lg font-medium">
                 <h3
                   class="text-lg/[30px] font-medium mb-2 flex items-center text-start group-open:text-(--color-alternate-02)">
                   <img
-                    src="../All PNG/image copy 34.png"
+                    src="./All PNG/image copy 34.png"
                     alt="bullet01"
                     class="w-5 h-5 mr-3" />
                   How to contact with riders emergency?
                 </h3>
               </summary>
               <p class="text-start">
-                Get your blood tests delivered at the home collect a sample from
-                management news. Get your blood tests delivered at the home
-                collect a sample from management news. Get your blood tests
-                delivered at the home collect a sample from management news. Get
-                your blood tests delivered at the home.
+                Get your blood tests delivered at the home collect a sample
+                from management news. Get your blood tests delivered at the
+                home collect a sample from management news. Get your blood
+                tests delivered at the home collect a sample from management
+                news. Get your blood tests delivered at the home.
               </p>
             </details>
           </div>
 
           <div>
-            <details class="group border-b border-(--border-btm-faq) pb-4 mb-4">
+            <details
+              class="group border-b border-(--border-btm-faq) pb-4 mb-4">
               <summary
                 class="flex items-center justify-between cursor-pointer text-lg font-medium">
                 <h3
                   class="text-lg/[30px] font-medium mb-2 flex items-center text-start group-open:text-(--color-alternate-02)">
                   <img
-                    src="../All PNG/image copy 34.png"
+                    src="./All PNG/image copy 34.png"
                     alt="bullet01"
                     class="w-5 h-5 mr-3" />
                   App installation failed, how to update system information?
                 </h3>
               </summary>
               <p class="text-start">
-                Get your blood tests delivered at the home collect a sample from
-                management news. Get your blood tests delivered at the home
-                collect a sample from management news. Get your blood tests
-                delivered at the home collect a sample from management news. Get
-                your blood tests delivered at the home.
+                Get your blood tests delivered at the home collect a sample
+                from management news. Get your blood tests delivered at the
+                home collect a sample from management news. Get your blood
+                tests delivered at the home collect a sample from management
+                news. Get your blood tests delivered at the home.
               </p>
             </details>
           </div>
 
           <div>
-            <details class="group border-b border-(--border-btm-faq) pb-4 mb-4">
+            <details
+              class="group border-b border-(--border-btm-faq) pb-4 mb-4">
               <summary
                 class="flex items-center justify-between cursor-pointer text-lg font-medium">
                 <h3
                   class="text-lg/[30px] font-medium mb-2 flex items-center text-start group-open:text-(--color-alternate-02)">
                   <img
-                    src="../All PNG/image copy 34.png"
+                    src="./All PNG/image copy 34.png"
                     alt="bullet01"
                     class="w-5 h-5 mr-3" />
                   Website reponse taking time, how to improve?
                 </h3>
               </summary>
               <p class="text-start">
-                Get your blood tests delivered at the home collect a sample from
-                management news. Get your blood tests delivered at the home
-                collect a sample from management news. Get your blood tests
-                delivered at the home collect a sample from management news. Get
-                your blood tests delivered at the home.
+                Get your blood tests delivered at the home collect a sample
+                from management news. Get your blood tests delivered at the
+                home collect a sample from management news. Get your blood
+                tests delivered at the home collect a sample from management
+                news. Get your blood tests delivered at the home.
               </p>
             </details>
           </div>
 
           <div>
-            <details class="group border-b border-(--border-btm-faq) pb-4 mb-4">
+            <details
+              class="group border-b border-(--border-btm-faq) pb-4 mb-4">
               <summary
                 class="flex items-center justify-between cursor-pointer text-lg font-medium">
                 <h3
                   class="text-lg/[30px] font-medium mb-2 flex items-center text-start group-open:text-(--color-alternate-02)">
                   <img
-                    src="../All PNG/image copy 34.png"
+                    src="./All PNG/image copy 34.png"
                     alt="bullet01"
                     class="w-5 h-5 mr-3" />
                   New update fixed all bug and issues
                 </h3>
               </summary>
               <p class="text-start">
-                Get your blood tests delivered at the home collect a sample from
-                management news. Get your blood tests delivered at the home
-                collect a sample from management news. Get your blood tests
-                delivered at the home collect a sample from management news. Get
-                your blood tests delivered at the home.
+                Get your blood tests delivered at the home collect a sample
+                from management news. Get your blood tests delivered at the
+                home collect a sample from management news. Get your blood
+                tests delivered at the home collect a sample from management
+                news. Get your blood tests delivered at the home.
               </p>
             </details>
           </div>
         </div>
       </div>
     </section>
-    <!-- Touch With us section -->
-    <section
-      class="container mx-auto h-[400px] sm:h-[325px] 2xl:h-[330px] mt-10">
-      <img class="hidden xl:block bg-[#F8F0EA]" src="../All PNG/bgc.png" alt="" />
-      <div
-        class="box-border p-1 lg:relative xl:top-[-240px] lg:bg-none py-5 px-[-60px] h-auto">
-        <div
-          class="xl:w-[76%] 2xl:w-[72%] mx-auto flex flex-col gap-10 xl:flex-row 2xl:justify-start xl:justify-center items-center py-[30px] bg-white xl:gap-5">
-          <div class="mix-blend-normal xl:pl-10">
-            <h1
-              class="font-bold font-[B612] text-[1rem] text-center sm:text-start sm:text-[1.563rem] leading-[55px] tracking-[1px]">
-              Like our service? Subscribe us
-            </h1>
-            <p
-              class="container font-[DM sans] font-normal text-[16px] leading-[16px] tracking-[1px] text-[#343D48] text-center sm:text-start w-[390px]">
-              We have more than thousand of creative entrepreneurs and stat
-              joining our business
-            </p>
-          </div>
-          <div class="flex flex-col justify-center items-start">
-            <div class="flex gap-[0.938rem]">
-              <!-- flex-col sm:flex-row -->
-              <input
-                class="bg-[#EFF3F7] outline-none h-[3.75rem] w-[350px] rounded-[5px] pl-2"
-                placeholder="Enter email address "
-                type="text" />
-              <button
-                class="hidden sm:block bg-[#DB4A87] w-[150px] sm:w-[110px] 2xl:w-[150px] h-[60px] rounded-[5px]">
-                Subscribe
-              </button>
-            </div>
-            <div
-              class="flex justify-center items-center gap-[0.938rem] flex-col">
-              <div class="flex justify-center items-center gap-[0.938rem]">
-                <input type="checkbox" name="" id="" />
-                <p
-                  class="font-[DM sans] font-normal leading-[30px] tracking-[1px] text-[14px]">
-                  Don’t provide any promotional message.
-                </p>
-              </div>
-              <div class="sm:hidden">
-                <button
-                  class="bg-[#DB4A87] w-[150px] sm:w-[110px] 2xl:w-[150px] h-[60px] rounded-[5px]">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+     <!-- ------------------------------------------ -->
     <!-- footer -->
     <footer
-      class="container mx-auto size-[100%] box-border flex flex-col lg:flex-row justify-center items-start sm:items-center sm:text-center lg:items-center gap-5 lg:gap-18 p-10">
-      <div class="flex justify-center items-start flex-col gap-4">
-        <img class="w-[12.188rem]" src="../All PNG/image.png" alt="" />
+      class="container mx-auto size-[100%] box-border flex flex-col lg:flex-row justify-center items-center  lg:items-start  sm:text-center gap-5 lg:gap-18 p-10">
+      <div class="flex justify-center items-center lg:items-start flex-col gap-4 ">
+        <img class="w-[12.188rem]" src="./All PNG/image.png" alt="" />
         <h1 class="font-normal font-[DM sans] text-[#0F2137] leading-[18.23px]">
           Terms of use | Privacy
         </h1>
         <p class="font-normal font-[DM sans] text-[#0F2137] leading-[18.23px]">
-          Copyright by 2019 YourName, Inc
+          Copyright &copy; by 2025 Sonu Sahoo, Inc
         </p>
       </div>
-      <div class="flex flex-col justify-center items-start gap-3">
+      <div class="flex flex-col justify-center item-center lg:items-start gap-3">
         <div>
           <p
             class="font-medium leading-[30px] tracking-[1px] font-[DM sans] text-[#0F2137]">
@@ -536,14 +522,14 @@
           </p>
         </div>
         <ul
-          class="flex justify-center gap-2 items-start flex-col text-[#02073E] font-normal font-[DM sans]">
+          class="flex justify-center gap-2 item-center lg:items-start flex-col text-[#02073E] font-normal font-[DM sans]">
           <li><a href="">Support Center</a></li>
           <li><a href=""></a>Customer Support</li>
           <li><a href="">About Us</a></li>
           <li><a href=""></a>Copyright</li>
         </ul>
       </div>
-      <div class="flex flex-col justify-center items-start gap-3">
+      <div class="flex flex-col justify-center item-center lg:items-start gap-3">
         <div>
           <p
             class="font-medium leading-[30px] tracking-[1px] font-[DM sans] text-[#0F2137]">
@@ -551,14 +537,14 @@
           </p>
         </div>
         <ul
-          class="flex justify-center gap-2 items-start flex-col text-[#02073E] font-normal font-[DM sans]">
+          class="flex justify-center gap-2 item-center lg:items-start flex-col text-[#02073E] font-normal font-[DM sans]">
           <li><a href="">Return Policy </a></li>
           <li><a href="">Privacy Policy</a></li>
           <li><a href="">Terms & Conditions</a></li>
           <li><a href="">Site Map</a></li>
         </ul>
       </div>
-      <div class="flex flex-col justify-center items-start gap-3">
+      <div class="flex flex-col justify-center item-center lg:items-start gap-3">
         <div>
           <p
             class="font-medium leading-[30px] tracking-[1px] font-[DM sans] text-[#0F2137]">
@@ -566,14 +552,14 @@
           </p>
         </div>
         <ul
-          class="flex justify-center gap-2 items-start flex-col text-[#02073E] font-normal font-[DM sans]">
+          class="flex justify-center gap-2 item-center lg:items-start flex-col text-[#02073E] font-normal font-[DM sans]">
           <li><a href="">Press inquiries </a></li>
           <li><a href="">Social media</a></li>
           <li><a href="">directories</a></li>
           <li><a href="">Images & B-roll</a></li>
         </ul>
       </div>
-      <div class="flex flex-col justify-center items-start gap-3">
+      <div class="flex flex-col justify-center item-center lg:items-start gap-3">
         <div>
           <p
             class="font-medium leading-[30px] tracking-[1px] font-[DM sans] text-[#0F2137]">
@@ -581,7 +567,7 @@
           </p>
         </div>
         <ul
-          class="flex justify-center gap-2 items-start flex-col text-[#02073E] font-normal font-[DM sans]">
+          class="flex justify-center gap-2 item-center lg:items-start flex-col text-[#02073E] font-normal font-[DM sans]">
           <li>
             <a href="">
               <span class="mr-2"><i class="fa-brands fa-facebook"></i></span>
@@ -610,4 +596,12 @@
       </div>
     </footer>
   </body>
+  <script>
+    const navLink = document.querySelector(".nav-link");
+    function onToggleMenu(e) {
+      console.log(e);
+      e.name = e.name === "menu-outline" ? "close-outline" : "menu-outline";
+      navLink.classList.toggle("top-[75px]");
+    }
+  </script>
 </html>
