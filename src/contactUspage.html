@@ -193,7 +193,7 @@
 
         <form
           id="contact-form"
-          class="bg-[#F9FAFC] px-4 sm:px-24 py-20 rounded-[30px]">
+          class="bg-[#F9FAFC] px-4 sm:px-24 py-20 rounded-[30px] " novalidate>
           <div class="grid grid-cols-2 gap-x-6 gap-y-14">
             <div class="name-div relative mb-4">
               <input
@@ -203,6 +203,7 @@
                 required
                 class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
                 placeholder="Full name" />
+                <div id="name-error"></div>
             </div>
             <div class="email-div relative mb-4">
               <input
@@ -212,7 +213,8 @@
                 required
                 class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
                 placeholder="Email address" />
-            </div>
+                <div id="email-error"></div>
+            </div> 
             <div class="phone-div relative mb-4">
               <input
                 type="tel"
@@ -221,6 +223,7 @@
                 required
                 class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
                 placeholder="Phone number" />
+                <div id="tel-error"></div>
             </div>
             <div class="date-div relative mb-4">
               <input
@@ -230,6 +233,7 @@
                 required
                 class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
                 placeholder="Date of birth" />
+                <div id="dob-error"></div>
             </div>
             <div class="city-div relative mb-4">
               <input
@@ -238,7 +242,8 @@
                 name="gender"
                 required
                 class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
-                placeholder="Gender" />
+                placeholder="Gender"/>
+                <div id="gender-error"></div>
             </div>
             <div class="city-div relative mb-4">
               <input
@@ -248,6 +253,7 @@
                 required
                 class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
                 placeholder="City" />
+                <div id="city-error"></div>
             </div>
             <div class="state-div relative mb-4">
               <input
@@ -257,6 +263,7 @@
                 required
                 class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
                 placeholder="State" />
+                <div id="state-error"></div>
             </div>
             <div class="country-div relative mb-4">
               <input
@@ -266,6 +273,7 @@
                 required
                 class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
                 placeholder="Country" />
+                <div id="country-error"></div>
             </div>
             <div class="address-div relative mb-4">
               <input
@@ -275,6 +283,7 @@
                 required
                 class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
                 placeholder="Address" />
+                <div id="address-error"></div>
             </div>
             <div class="message-div relative mb-4">
               <input
@@ -284,6 +293,7 @@
                 required
                 class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
                 placeholder="Message" />
+                <div id="message-error"></div>
             </div>
             <div class="counselling-div">
               <p class="font-medium mb-4 text-[#808080]">
@@ -307,6 +317,8 @@
                     class="w-[22px] h-[22px] accent-[#DB4A87]" />
                   <span class="ml-2 text-[#808080]">No</span>
                 </label>
+
+                <div id="counselling-error"></div>
               </div>
             </div>
             <div>
@@ -325,6 +337,7 @@
           <div class="mt-8">
             <label class="inline-flex items-center cursor-pointer">
               <input
+                id="check"
                 type="checkbox"
                 class="form-checkbox w-7 h-7 peer transition-all duration-300 border-[#808080] accent-[#DB4A87]"
                 required />
@@ -332,6 +345,7 @@
                 >Agree terms and conditions</span
               >
             </label>
+            <div id="Terms-condition"></div>
           </div>
 
           <button
@@ -339,6 +353,7 @@
             class="w-[100%] sm:w-[400px] bg-[#DB4A87] text-white py-4.5 mt-12">
             Submit Information
           </button>
+          <div id="submit-error"></div>
         </form>
       </section>
     </div>
@@ -412,9 +427,11 @@
                 <h3
                   class="text-lg/[30px] font-medium mb-2 flex items-center text-start group-open:text-(--color-alternate-02)">
                   <img
-                    src="./All PNG/image copy 34.png"
+                    src="./image copy 34.png"
                     alt="bullet01"
-                    class="w-5 h-5 mr-3" />
+                    class="imgs w-5 h-5 mr-3" 
+                    onclick="changeImage()"
+                    />
                   How to contact with riders emergency?
                 </h3>
               </summary>
@@ -435,9 +452,11 @@
                 <h3
                   class="text-lg/[30px] font-medium mb-2 flex items-center text-start group-open:text-(--color-alternate-02)">
                   <img
-                    src="./All PNG/image copy 34.png"
+                    src="./image copy 34.png"
                     alt="bullet01"
-                    class="w-5 h-5 mr-3" />
+                    class="imgs w-5 h-5 mr-3" 
+                     onclick="changeImage()"
+                    />
                   App installation failed, how to update system information?
                 </h3>
               </summary>
@@ -644,5 +663,17 @@
       e.name = e.name === "menu-outline" ? "close-outline" : "menu-outline";
       navLink.classList.toggle("top-[75px]");
     }
+
+
+    function changeImage(){
+        let displayImage = document.querySelector(".imgs");
+        console.log(displayImage.src == "http://127.0.0.1:5501/src/image%20copy%2034.png")
+        if(displayImage.src.match('http://127.0.0.1:5501/src/image%20copy%2034.png')){
+          displayImage.src = "./All PNG/image copy 38.png"
+        }else{
+          displayImage.src = "http://127.0.0.1:5501/src/image%20copy%2034.png"
+        }
+    }
   </script>
+  <script src="./script.js"></script>
 </html>
