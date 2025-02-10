@@ -38,7 +38,7 @@ function validateForm() {
       if (!input || !errorDiv) return; // Ensure elements exist before accessing them
       if (!input.value.trim()) {
         errorDiv.innerText = `${field.replace("-", " ")} is required.`;
-        errorMessage=`${field.replace("-", " ")} is required.`
+        // errorMessage=`${field.replace("-", " ")} is required.`
         valid = false;
       } else {
         errorDiv.innerText = "";

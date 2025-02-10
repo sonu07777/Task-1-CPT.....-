@@ -25,7 +25,8 @@
   </head>
 
   <body>
-    <nav class="max-w-7xl sticky w-[100vw] top-0 z-[40] box-border container mx-auto">
+    <nav
+      class="max-w-7xl sticky w-[100vw] top-0 z-[40] box-border container mx-auto">
       <section
         id="nav"
         class="container h-[2.5rem] flex items-center justify-around gap-10 mx-auto py-[27px] w-auto rounded-xl">
@@ -193,107 +194,126 @@
 
         <form
           id="contact-form"
-          class="bg-[#F9FAFC] px-4 sm:px-24 py-20 rounded-[30px] " novalidate>
+          class="bg-[#F9FAFC] px-4 sm:px-24 py-20 rounded-[30px]"
+          novalidate>
           <div class="grid grid-cols-2 gap-x-6 gap-y-14">
             <div class="name-div relative mb-4">
+              <label for="" class="text-[#808080]">Full name</label>
+
               <input
                 type="text"
                 id="name"
                 name="name"
                 required
-                class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
-                placeholder="Full name" />
-                <div id="name-error"></div>
+                class="w-full p-3 font-medium border-b-[1px] border-[#808080] outline-none" />
+              <div class="text-[#FF0000]" id="name-error"></div>
             </div>
             <div class="email-div relative mb-4">
+              <label for="" class="text-[#808080]">Email address</label>
+
               <input
                 type="email"
                 id="email"
                 name="email"
                 required
-                class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
-                placeholder="Email address" />
-                <div id="email-error"></div>
-            </div> 
+                class="w-full p-3 font-medium border-b-[1px] border-[#808080] outline-none" />
+              <div class="text-[#FF0000]" id="email-error"></div>
+            </div>
             <div class="phone-div relative mb-4">
+              <label for="" class="text-[#808080]">Phone number</label>
+
               <input
                 type="tel"
                 id="tel"
                 name="tel"
                 required
-                class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
-                placeholder="Phone number" />
-                <div id="tel-error"></div>
+                class="w-full p-3 font-medium border-b-[1px] border-[#808080] outline-none"
+                placeholder="" />
+              <div class="text-[#FF0000]" id="tel-error"></div>
             </div>
             <div class="date-div relative mb-4">
+              <label for="" class="text-[#808080]">Date of birth</label>
+
               <input
                 type="date"
                 id="date"
                 name="date"
                 required
-                class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
-                placeholder="Date of birth" />
-                <div id="dob-error"></div>
+                class="w-full p-3 font-medium border-b-[1px] border-[#808080] outline-none"
+                placeholder="" />
+              <div class="text-[#FF0000]" id="date-error"></div>
             </div>
             <div class="city-div relative mb-4">
+              <label for="" class="text-[#808080]">Gender</label>
+
               <input
                 type="text"
                 id="gender"
                 name="gender"
                 required
-                class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
-                placeholder="Gender"/>
-                <div id="gender-error"></div>
+                class="w-full p-3 font-medium border-b-[1px] border-[#808080] outline-none"
+                placeholder="" />
+              <div class="text-[#FF0000]" id="gender-error"></div>
             </div>
             <div class="city-div relative mb-4">
+              <label for="" class="text-[#808080]">City</label>
+
               <input
                 type="text"
                 id="city"
                 name="city"
                 required
-                class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
-                placeholder="City" />
-                <div id="city-error"></div>
+                class="w-full p-3 font-medium border-b-[1px] border-[#808080] outline-none"
+                placeholder="" />
+              <div class="text-[#FF0000]" id="city-error"></div>
             </div>
             <div class="state-div relative mb-4">
+              <label for="" class="text-[#808080]">State</label>
+
               <input
                 type="text"
                 id="state"
                 name="state"
                 required
-                class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
-                placeholder="State" />
-                <div id="state-error"></div>
+                class="w-full p-3 font-medium border-b-[1px] border-[#808080] outline-none"
+                placeholder="" />
+              <div class="text-[#FF0000]" id="state-error"></div>
             </div>
             <div class="country-div relative mb-4">
+              <label for="" class="text-[#808080]">Country</label>
+
               <input
                 type="text"
                 id="country"
                 name="country"
                 required
-                class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
-                placeholder="Country" />
-                <div id="country-error"></div>
+                class="w-full p-3 font-medium border-b-[1px] border-[#808080] outline-none"
+                placeholder="" />
+              <div class="text-[#FF0000]" id="country-error"></div>
             </div>
             <div class="address-div relative mb-4">
+              <label for="" class="text-[#808080]">Address</label>
+
               <input
                 type="text"
                 id="address"
                 name="address"
                 required
-                class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
-                placeholder="Address" />
-                <div id="address-error"></div>
+                class="w-full p-3 font-medium border-b-[1px] border-[#808080] outline-none"
+                placeholder="" />
+              <div class="text-[#FF0000]" id="address-error"></div>
             </div>
             <div class="message-div relative mb-4">
+              <label for="" class="text-[#808080]">Message</label>
+
               <input
                 type="text"
                 id="message"
                 name="message"
                 required
-                class="w-full p-3 font-medium border-b-[1px] border-[#808080]"
-                placeholder="Message" />
-                <div id="message-error"></div>
+                class="w-full p-3 font-medium border-b-[1px] border-[#808080] outline-none"
+                placeholder="" />
+              <div class="text-[#FF0000]" id="message-error"></div>
             </div>
             <div class="counselling-div">
               <p class="font-medium mb-4 text-[#808080]">
@@ -345,7 +365,7 @@
                 >Agree terms and conditions</span
               >
             </label>
-            <div id="Terms-condition"></div>
+            <div class="text-[#FF0000]" id="Terms-condition"></div>
           </div>
 
           <button
@@ -353,7 +373,9 @@
             class="w-[100%] sm:w-[400px] bg-[#DB4A87] text-white py-4.5 mt-12">
             Submit Information
           </button>
-          <div id="submit-error"></div>
+          <div
+            class="text-[#FF0000] w-[100%] sm:w-[400px] flex items-center justify-center"
+            id="submit-error"></div>
         </form>
       </section>
     </div>
@@ -427,11 +449,11 @@
                 <h3
                   class="text-lg/[30px] font-medium mb-2 flex items-center text-start group-open:text-(--color-alternate-02)">
                   <img
-                    src="./image copy 34.png"
+                    src="./All PNG/imagecopy34.png"
                     alt="bullet01"
-                    class="imgs w-5 h-5 mr-3" 
-                    onclick="changeImage()"
-                    />
+                    class=" w-5 h-5 mr-3"
+                    id="toggleImage"
+                    onclick="changeImage()" />
                   How to contact with riders emergency?
                 </h3>
               </summary>
@@ -452,11 +474,11 @@
                 <h3
                   class="text-lg/[30px] font-medium mb-2 flex items-center text-start group-open:text-(--color-alternate-02)">
                   <img
-                    src="./image copy 34.png"
+                    src="./All PNG/imagecopy34.png"
                     alt="bullet01"
-                    class="imgs w-5 h-5 mr-3" 
-                     onclick="changeImage()"
-                    />
+                    class="imgs w-5 h-5 mr-3"
+                    id="toggleImage1"
+                    onclick="changeImage1()" />
                   App installation failed, how to update system information?
                 </h3>
               </summary>
@@ -477,9 +499,12 @@
                 <h3
                   class="text-lg/[30px] font-medium mb-2 flex items-center text-start group-open:text-(--color-alternate-02)">
                   <img
-                    src="./All PNG/image copy 34.png"
+                    src="./All PNG/imagecopy34.png"
                     alt="bullet01"
-                    class="w-5 h-5 mr-3" />
+                    class="w-5 h-5 mr-3"
+                    id="toggleImage2"
+                    onclick="changeImage2()"
+                    />
                   Website reponse taking time, how to improve?
                 </h3>
               </summary>
@@ -500,9 +525,12 @@
                 <h3
                   class="text-lg/[30px] font-medium mb-2 flex items-center text-start group-open:text-(--color-alternate-02)">
                   <img
-                    src="./All PNG/image copy 34.png"
+                    src="./All PNG/imagecopy34.png"
                     alt="bullet01"
-                    class="w-5 h-5 mr-3" />
+                    class="w-5 h-5 mr-3"
+                    id="toggleImage3"
+                    onclick="changeImage3()"
+                    />
                   New update fixed all bug and issues
                 </h3>
               </summary>
@@ -519,18 +547,18 @@
       </div>
     </section>
     <!-- subscribe section -->
-    <section class="h-[400px] sm:h-[300px] 2xl:h-[330px] mt-10">
+    <section class="h-[400px] sm:h-[300px] 2xl:h-[330px] sm:mt-10">
       <img
-        class="w-full h-auto hidden xl:block bg-[#F8F0EA]  xls:container xls:mx-auto"
+        class="w-full h-auto hidden xl:block bg-[#F8F0EA] xls:container xls:mx-auto"
         src="./All PNG/bgc.png"
         alt="" />
       <div
         class="container mx-auto box-border lg:relative xl:top-[-255px] lg:bg-none py-5 h-auto max-w-[1200px]">
         <div
-          class="w-[94%] flex flex-col gap-4 xl:flex-row xl:justify-evenly items-center py-10 bg-white px-4 sm:px-6 lg:px-8 mx-auto rounded-xl ">
-          <div class="text-center xl:text-left xl:pl-0  ">
+          class="w-[94%] flex flex-col gap-4 xl:flex-row xl:justify-evenly items-center py-10 bg-white px-4 sm:px-6 lg:px-8 mx-auto rounded-xl">
+          <div class="text-center xl:text-left xl:pl-0">
             <h1
-              class="font-bold  text-lg sm:text-[30px] leading-[1.5] tracking-wide">
+              class="font-bold text-lg sm:text-[30px] leading-[1.5] tracking-wide">
               Like our service? Subscribe to us
             </h1>
             <p
@@ -540,7 +568,7 @@
             </p>
           </div>
           <div
-            class="w-full max-w-md flex flex-col items-center xl:items-start ">
+            class="w-full max-w-md flex flex-col items-center xl:items-start">
             <div class="w-full flex flex-col sm:flex-row gap-3">
               <input
                 class="bg-gray-200 outline-none h-[60px] w-full sm:w-[350px] rounded-md px-3"
@@ -552,7 +580,11 @@
               </button>
             </div>
             <div class="flex items-center gap-2 mt-3">
-              <input class="size-[16px]" type="checkbox" id="no-promos" class="cursor-pointer" />
+              <input
+                class="size-[16px]"
+                type="checkbox"
+                id="no-promos"
+                class="cursor-pointer" />
               <label
                 for="no-promos"
                 class="text-[14px] text-gray-700 cursor-pointer">
@@ -565,16 +597,14 @@
     </section>
     <!-- footer -->
     <footer
-      class="container mx-auto size-[100%] box-border flex flex-col lg:flex-row justify-between items-center lg:items-start sm:text-center gap-5 lg:gap-18 px-10 lg:px-30 py-10  mt-10 max-w-[1366px]">
+      class="container mx-auto size-[100%] box-border flex flex-col lg:flex-row justify-between items-center lg:items-start sm:text-center gap-5 lg:gap-18 px-10 lg:px-30 py-10 mt-10 max-w-[1366px]">
       <div
         class="flex justify-center items-center lg:items-start flex-col gap-4">
         <img class="w-[12.188rem]" src="./All PNG/image.png" alt="" />
-        <h1
-          class="font-normal font-[DM sans] text-[#0F2137] leading-[18.23px]">
+        <h1 class="font-normal font-[DM sans] text-[#0F2137] leading-[18.23px]">
           Terms of use | Privacy
         </h1>
-        <p
-          class="font-normal font-[DM sans] text-[#0F2137] leading-[18.23px]">
+        <p class="font-normal font-[DM sans] text-[#0F2137] leading-[18.23px]">
           Copyright &copy; by 2025 Sonu Sahoo, Inc
         </p>
       </div>
@@ -664,15 +694,38 @@
       navLink.classList.toggle("top-[75px]");
     }
 
+    function changeImage() {
+      let img = document.getElementById("toggleImage");
+      if (img.src.includes("imagecopy34.png")) {
+        img.src = "./All PNG/imagecopy38.png";
+      } else {
+        img.src = "./All PNG/imagecopy34.png"; // Toggle back if needed
+      }
+    }
 
-    function changeImage(){
-        let displayImage = document.querySelector(".imgs");
-        console.log(displayImage.src == "http://127.0.0.1:5501/src/image%20copy%2034.png")
-        if(displayImage.src.match('http://127.0.0.1:5501/src/image%20copy%2034.png')){
-          displayImage.src = "./All PNG/image copy 38.png"
-        }else{
-          displayImage.src = "http://127.0.0.1:5501/src/image%20copy%2034.png"
-        }
+    function changeImage1() {
+      let img = document.getElementById("toggleImage1");
+      if (img.src.includes("imagecopy34.png")) {
+        img.src = "./All PNG/imagecopy38.png";
+      } else {
+        img.src = "./All PNG/imagecopy34.png"; // Toggle back if needed
+      }1
+    }
+    function changeImage2() {
+      let img = document.getElementById("toggleImage2");
+      if (img.src.includes("imagecopy34.png")) {
+        img.src = "./All PNG/imagecopy38.png";
+      } else {
+        img.src = "./All PNG/imagecopy34.png"; // Toggle back if needed
+      }
+    }
+    function changeImage3() {
+      let img = document.getElementById("toggleImage3");
+      if (img.src.includes("imagecopy34.png")) {
+        img.src = "./All PNG/imagecopy38.png";
+      } else {
+        img.src = "./All PNG/imagecopy34.png"; // Toggle back if needed
+      }
     }
   </script>
   <script src="./script.js"></script>
