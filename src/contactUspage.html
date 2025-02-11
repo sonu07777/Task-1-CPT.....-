@@ -178,9 +178,7 @@
     </section>
     <!-- contact form -->
     <div class="conatainer size-full bg-[#FFF5ED]">
-      <section
-        id="contact-form"
-        class="max-w-5xl py-26 px-4 mx-auto bg-[#FFF5ED] w-[100%]">
+      <section id="" class="max-w-5xl py-26 px-4 mx-auto bg-[#FFF5ED] w-[100%]">
         <div class="text-center mb-12">
           <h2
             class="text-[40px]/[52.08px] text-[#2E2F35] font-semibold tracking-[2px]">
@@ -244,15 +242,20 @@
               <div class="text-[#FF0000]" id="date-error"></div>
             </div>
             <div class="city-div relative mb-4">
-              <label for="" class="text-[#808080]">Gender</label>
+              <label for="gender" class="text-[#808080]">Gender</label>
 
-              <input
-                type="text"
+              <select
                 id="gender"
                 name="gender"
                 required
-                class="w-full p-3 font-medium border-b-[1px] border-[#808080] outline-none"
-                placeholder="" />
+                class="w-full p-3 font-medium border-b-[1px] border-[#808080] outline-none bg-white">
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="prefer_not_to_say">Prefer not to say</option>
+              </select>
+
               <div class="text-[#FF0000]" id="gender-error"></div>
             </div>
             <div class="city-div relative mb-4">
@@ -370,7 +373,7 @@
 
           <button
             type="submit"
-            class="w-[100%] sm:w-[400px] bg-[#DB4A87] text-white py-4.5 mt-12">
+            class="w-[100%] sm:w-[400px] bg-[#DB4A87] text-white py-4.5 mt-12 cursor-pointer">
             Submit Information
           </button>
           <div
@@ -378,6 +381,7 @@
             id="submit-error"></div>
         </form>
       </section>
+     
     </div>
     <!-- map  -->
     <section id="map">
@@ -451,7 +455,7 @@
                   <img
                     src="./All PNG/imagecopy34.png"
                     alt="bullet01"
-                    class=" w-5 h-5 mr-3"
+                    class="w-5 h-5 mr-3"
                     id="toggleImage"
                     onclick="changeImage()" />
                   How to contact with riders emergency?
@@ -503,8 +507,7 @@
                     alt="bullet01"
                     class="w-5 h-5 mr-3"
                     id="toggleImage2"
-                    onclick="changeImage2()"
-                    />
+                    onclick="changeImage2()" />
                   Website reponse taking time, how to improve?
                 </h3>
               </summary>
@@ -529,8 +532,7 @@
                     alt="bullet01"
                     class="w-5 h-5 mr-3"
                     id="toggleImage3"
-                    onclick="changeImage3()"
-                    />
+                    onclick="changeImage3()" />
                   New update fixed all bug and issues
                 </h3>
               </summary>
@@ -687,6 +689,7 @@
     </footer>
   </body>
   <script>
+    
     const navLink = document.querySelector(".nav-link");
     function onToggleMenu(e) {
       console.log(e);
@@ -709,7 +712,8 @@
         img.src = "./All PNG/imagecopy38.png";
       } else {
         img.src = "./All PNG/imagecopy34.png"; // Toggle back if needed
-      }1
+      }
+      1;
     }
     function changeImage2() {
       let img = document.getElementById("toggleImage2");
@@ -728,5 +732,5 @@
       }
     }
   </script>
-  <script src="./script.js"></script>
+  <script defer src="./script.js"></script>
 </html>
