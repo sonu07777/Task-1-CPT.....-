@@ -1,14 +1,9 @@
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
   const inputs = form.querySelectorAll("input[required]");
   const termsCheckbox = document.getElementById("check");
   const termsError = document.getElementById("Terms-condition");
+  console.log(inputs);
   
   const alertBox = document.createElement("div");
   alertBox.id = "custom-alert";
@@ -42,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     inputs.forEach((input) => {
       if (!validateField(input)) {
-        isValid = false;
+        isValid = false; 
       }
     });
     
@@ -59,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         alertBox.style.display = "none";
         form.reset();
         clearErrors();
-      }, 5000);
+      }, 3000);
     }
   });
 

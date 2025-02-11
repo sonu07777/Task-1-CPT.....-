@@ -248,12 +248,15 @@
                 id="gender"
                 name="gender"
                 required
-                class="w-full p-3 font-medium border-b-[1px] border-[#808080] outline-none bg-white">
+                class="w-full p-3 font-medium border-b-[1px] border-[#808080] outline-none bg-white text-[#808080]"
+                onchange="changeTextColor(this)">
                 <option value="" disabled selected>Select your gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-                <option value="prefer_not_to_say">Prefer not to say</option>
+                <option value="male" class="text-[#808080]">Male</option>
+                <option value="female" class="text-[#808080]">Female</option>
+                <option value="other" class="text-[#808080]">Other</option>
+                <option value="prefer_not_to_say" class="text-[#808080]">
+                  Prefer not to say
+                </option>
               </select>
 
               <div class="text-[#FF0000]" id="gender-error"></div>
@@ -350,10 +353,13 @@
               </p>
               <div class="flex">
                 <input
+                  id="resume"
                   type="file"
                   class="w-full p-3 text-[#808080] font-medium border-b-[1.5px] focus:outline-none focus:border-black cursor-pointer border-[#808080]"
-                  accept="pdf/*" />
+                  accept="application/pdf"
+                  required />
               </div>
+              <div id="resume-error"  class="text-[#FF0000]" ></div>
             </div>
           </div>
 
@@ -381,7 +387,6 @@
             id="submit-error"></div>
         </form>
       </section>
-     
     </div>
     <!-- map  -->
     <section id="map">
@@ -689,7 +694,6 @@
     </footer>
   </body>
   <script>
-    
     const navLink = document.querySelector(".nav-link");
     function onToggleMenu(e) {
       console.log(e);
@@ -729,6 +733,14 @@
         img.src = "./All PNG/imagecopy38.png";
       } else {
         img.src = "./All PNG/imagecopy34.png"; // Toggle back if needed
+      }
+    }
+
+    function changeTextColor(selectElement) {
+      console.log(selectElement)
+      if (selectElement.value) {
+        selectElement.classList.remove("text-[#808080]");
+        selectElement.classList.add("text-black");
       }
     }
   </script>
